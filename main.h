@@ -21,6 +21,7 @@
  * struct parameters - parameters struct
  *
  * @unsign: flag if unsigned value
+ *
  * @plus_flag: on if plus_flag specified
  * @space_flag: on if hashtag_flag specified
  * @hashtag_flag: on if _flag specified
@@ -31,7 +32,7 @@
  * @precision: field precision specified
  *
  * @h_modifier: on if h_modifier is specified
- * @l_modifier: on if 1 modifier is specified
+ * @l_modifier: on if l_modifier is specified
  *
  */
 typedef struct parameters
@@ -48,7 +49,7 @@ typedef struct parameters
 	unsigned int precision;
 
 	unsigned int h_modifier		: 1;
-	unsigned int 1_modifier		: 1;
+	unsigned int l_modifier		: 1;
 } params_t;
 
 /**
